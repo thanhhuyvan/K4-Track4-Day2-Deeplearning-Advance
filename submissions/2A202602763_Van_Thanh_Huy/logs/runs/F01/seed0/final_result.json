@@ -1,0 +1,138 @@
+{
+  "exp_id": "F01",
+  "seed": 0,
+  "backbone": "convnext_tiny",
+  "method": "fivecrop",
+  "temperature": 0.9938665551677637,
+  "macro_f1_val": 0.9724003582886982,
+  "macro_f1": 0.9727979122464256,
+  "top1": 0.9780439121756487,
+  "ece": 0.0065395657428826085,
+  "balanced_acc": 0.978363563514334,
+  "nll": 0.07266495376825333,
+  "ece_before": 0.0066733698190089156,
+  "per_class": [
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 0,
+      "class_name": "Chinee Apple",
+      "support": 226.0,
+      "precision": 0.9678899082568807,
+      "recall": 0.9336283185840708,
+      "f1": 0.9504504504504504
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 1,
+      "class_name": "Lantana",
+      "support": 213.0,
+      "precision": 0.9675925925925926,
+      "recall": 0.9812206572769953,
+      "f1": 0.9743589743589743
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 2,
+      "class_name": "Parkinsonia",
+      "support": 207.0,
+      "precision": 0.9808612440191388,
+      "recall": 0.9903381642512077,
+      "f1": 0.9855769230769231
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 3,
+      "class_name": "Parthenium",
+      "support": 205.0,
+      "precision": 0.9806763285024155,
+      "recall": 0.9902439024390244,
+      "f1": 0.9854368932038836
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 4,
+      "class_name": "Prickly Acacia",
+      "support": 213.0,
+      "precision": 0.9295154185022027,
+      "recall": 0.9906103286384976,
+      "f1": 0.9590909090909091
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 5,
+      "class_name": "Rubber Vine",
+      "support": 202.0,
+      "precision": 0.9752475247524752,
+      "recall": 0.9752475247524752,
+      "f1": 0.9752475247524752
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 6,
+      "class_name": "Siam Weed",
+      "support": 215.0,
+      "precision": 0.9683257918552036,
+      "recall": 0.9953488372093023,
+      "f1": 0.981651376146789
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 7,
+      "class_name": "Snake Weed",
+      "support": 204.0,
+      "precision": 0.9473684210526315,
+      "recall": 0.9705882352941176,
+      "f1": 0.9588377723970944
+    },
+    {
+      "group": "F01",
+      "seed": 0,
+      "label": 8,
+      "class_name": "Negatives",
+      "support": 1822.0,
+      "precision": 0.9911012235817576,
+      "recall": 0.9780461031833151,
+      "f1": 0.9845303867403316
+    }
+  ],
+  "latency": [
+    {
+      "p50": 28.603671500604833,
+      "p95": 29.177079050441534,
+      "p99": 30.07573797025543,
+      "mean": 28.54659476006418,
+      "n": 50,
+      "batch": 1,
+      "gpu": "Tesla T4",
+      "dtype": "fp32",
+      "img_size": 224,
+      "method": "fivecrop",
+      "images_per_s": 34.96054693464281,
+      "torch": "2.11.0+cu128",
+      "preprocessing": "image decode/resize/normalize excluded; TTA views + aggregate included"
+    },
+    {
+      "p50": 709.8379419999219,
+      "p95": 717.07615790001,
+      "p99": 717.7625344199441,
+      "mean": 711.0806292599591,
+      "n": 50,
+      "batch": 32,
+      "gpu": "Tesla T4",
+      "dtype": "fp32",
+      "img_size": 224,
+      "method": "fivecrop",
+      "images_per_s": 45.08071223953188,
+      "torch": "2.11.0+cu128",
+      "preprocessing": "image decode/resize/normalize excluded; TTA views + aggregate included"
+    }
+  ]
+}

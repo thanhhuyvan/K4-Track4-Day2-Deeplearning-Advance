@@ -1,0 +1,7 @@
+{
+  "archive": "deepweeds_submission.zip",
+  "sha256": "2f331a884e22a989e63262b7a3f2667037c11b9efd09b32504b1d96bece66bfb",
+  "source": "Kaggle output downloaded by user",
+  "repair": "Species is optional in split CSVs; original CSVs and predictions unchanged",
+  "notebook": "Portable notebook from local project, not the executed Kaggle notebook export"
+}
